@@ -246,6 +246,7 @@
 		8A1F91A825ADF5040096A9E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZXWBUY9FJ7;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -257,6 +258,7 @@
 		8A1F91A925ADF5040096A9E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZXWBUY9FJ7;
 				ENABLE_HARDENED_RUNTIME = YES;

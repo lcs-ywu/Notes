@@ -30,3 +30,48 @@ struct Sport {
 }
 let chessBoxing = Sport(name: "Chessboxing", isOlympicSport: false)
 print(chessBoxing.olympicStatus)
+
+//Property observers
+//Property observers let you run code before or after any property changes.
+struct Progress {
+    var task: String
+    var amount: Int {
+        didSet {
+            print("\(task) is now \(amount)% complete")
+        }
+    }
+}
+//We can now create an instance of that struct and adjust its progress over time:
+var progress = Progress(task: "Loading data", amount: 0)
+progress.amount = 30
+progress.amount = 80
+progress.amount = 100
+//What we want to happen is for Swift to print a message every time amount changes, and we can use a didSet property observer for that. This will run some code every time amount changes:
+//You can also use willSet to take action before a property changes, but that is rarely used.
+
+//Methods
+//Structs can have functions inside them, and those functions can use the properties of the struct as they need to. Functions inside structs are called methods, but they still use the same func keyword.
+struct City {
+    var population: Int
+
+    func collectTaxes() -> Int {
+        return population * 1000
+    }
+}
+let london = City(population: 9_000_000)
+london.collectTaxes()
+//The only real difference is that methods belong to a type, such as structs, enums, and classes, whereas functions do not
+
+//Mutating Methods
+//If a struct has a variable property but the instance of the struct was created as a constant, that property can’t be changed – the struct is constant, so all its properties are also constant regardless of how they were created.
+//Swift won’t let you write methods that change properties unless you specifically request it.
+//When you want to change a property inside a method, you need to mark it using the mutating keyword, like this:
+struct Person {
+    var name: String
+
+    mutating func makeAnonymous() {
+        name = "Anonymous"
+    }
+}
+var person = Person(name: "Ed")
+person.makeAnonymous()

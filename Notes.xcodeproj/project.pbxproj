@@ -29,6 +29,7 @@
 		8A25BC5225AF417200AF6617 /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8A25BC5425B0AFA600AF6617 /* ClosuresDay2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClosuresDay2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8A25BC5625B61D6400AF6617 /* StructsPart1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StructsPart1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8A25BC5825B7253300AF6617 /* StructsAndClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StructsAndClasses.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		8A1F919725ADF5040096A9E8 = {
 			isa = PBXGroup;
 			children = (
+				8A25BC5825B7253300AF6617 /* StructsAndClasses.playground */,
 				8A25BC5625B61D6400AF6617 /* StructsPart1.playground */,
 				8A25BC5425B0AFA600AF6617 /* ClosuresDay2.playground */,
 				8A25BC5225AF417200AF6617 /* Closures.playground */,

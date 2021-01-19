@@ -77,6 +77,7 @@ struct Person2 {
         return "My social security number is \(id)"
     }
 }
+let ed2 = Person2(id: "12345")
 //Another common option is public, which lets all other code use the property or method.
 
 //Struct Summary
